@@ -1,0 +1,22 @@
+{
+  "name": "todo-list",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sergio MT <sergio.mt88@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/misan7/todo-list-express",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}

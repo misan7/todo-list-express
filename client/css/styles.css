@@ -1,14 +1,36 @@
-h2 {
-    font-family:arial;
+.title-focus {
+    font-family: arial;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-form {
-    display: inline-block;
+.form-center {
+    display: flex;
+    justify-content: center;
 }
 
-.list {
-	font-family:"Trebuchet MS" "Bahiana";
-    font-size:20px;
-	color:#000000;
-    cursor:pointer;
+.input-task {
+    width: 80%;
+}
+
+.list-tasks {
+    font-family: "Trebuchet MS" "Bahiana";
+    font-size: 20px;
+    color: #000000;
+}
+
+.list-tasks li {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+    background-image: url(../img/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
 }

@@ -4,17 +4,16 @@ block content
 
   .container
     .row
-        .col-md-4
-        .col-md-4
-          h2 To Do List
-          form(name='checkListForm', action= '/todo', method= 'POST')
-            input(type='text', name='checkListItem', placeholder='Add your Item...')
-          button#add.btn.btn-info Add task
-          button#clear.btn.btn-default(type='button', title='Clear checked items') clear
-          br
-          br
-          .list
-            ul
-              each listItem in todo
-                li #{listItem.checkListItem}
-        .col-md-4
+      .col-md-8.col-md-offset-2
+        h2.title-focus ¿Cuál es tu foco hoy?
+        form.form-center(name='checkListForm', action= '/todo', method= 'POST')
+          input.input-task(type='text', name='checkListItem', placeholder='Añade tareas...', autofocus="")
+          button#add.btn.btn-info +
+        br
+        br
+        ul.list-unstyled.list-tasks
+          each listItem, index in todo
+            li.list-group-item
+                p #{listItem.checkListItem}
+                button.btn.btn-danger.remove(href="")
+                  i.glyphicon.glyphicon-remove
