@@ -18,4 +18,11 @@ router.post('/todo', (req, res) => {
 		.then( () => res.redirect('/todo') )
 })
 
+router.delete('todo/:id', (req, res) => {
+	const id = req.params.id
+	aTasks.splice(id, 1)
+	writeTasksInFile(aTasks)
+		.then( () => res.send(`Succes deleting ${id}`))
+})
+
 module.exports = router

@@ -5,15 +5,16 @@ block content
   .container
     .row
       .col-md-8.col-md-offset-2
-        h2.title-focus ¿Cuál es tu foco hoy?
+        h2.title-focus ¿Qué tareas piensas hacer hoy?
         form.form-center(name='checkListForm', action= '/todo', method= 'POST')
           input.input-task(type='text', name='checkListItem', placeholder='Añade tareas...', autofocus="")
-          button#add.btn.btn-info +
+          button#add.btn.btn-info
+            i.glyphicon.glyphicon-plus
         br
         br
         ul.list-unstyled.list-tasks
-          each listItem in todo
+          each listItem,index in todo
             li.list-group-item
-                p #{listItem}
-                button.btn.btn-danger.remove(href="")
-                  i.glyphicon.glyphicon-remove
+              p #{listItem}
+              button.btn.btn-danger.remove(href=`/todo/${index}`)
+                i.glyphicon.glyphicon-remove

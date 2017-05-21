@@ -1,5 +1,25 @@
+.navbar-header .navbar-brand {
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+
+.navbar-header .navbar-brand:hover {
+    color:rgba(255, 255, 255, 0.9);
+    cursor: default;
+}
+
+p .navbar-link {
+    text-decoration: none;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+
+p .navbar-link:hover {
+    color: white;
+}
+
 .title-focus {
-    font-family: arial;
+    font-family: 'Roboto Slab','Kaushan Script', serif, cursive;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -16,14 +36,15 @@
 }
 
 .list-tasks {
-    font-family: "Trebuchet MS" "Bahiana";
+    font-family: 'Roboto Slab','Kaushan Script', serif, cursive;
     font-size: 20px;
-    color: #000000;
+    color: white;
 }
 
 .list-tasks li {
   display: flex;
   justify-content: space-between;
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 body {
