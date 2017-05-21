@@ -12,8 +12,8 @@ block content
         br
         br
         ul.list-unstyled.list-tasks
-          each listItem, index in todo
+          each listItem in todo
             li.list-group-item
-                p #{listItem.checkListItem}
+                p #{listItem}
                 button.btn.btn-danger.remove(href="")
                   i.glyphicon.glyphicon-remove
